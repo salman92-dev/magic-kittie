@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #CAAEE8;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: playtime;
+  src: url(/fonts/playtime-with-hot-toddies/playtime.ttf);
+}
+.playtime {
+  font-family: playtime;
+}
+@font-face {
+  font-family: surab;
+  src: url(/fonts/surabanglus/Surabanglus.ttf);
+}
+.surab {
+  font-family: surab;
+}
+
+/* hero section */
+.hero {
+  background: url(/images/hero-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 180vh;
+}
+
+.cta-bg {
+  background: url(/images/cta-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.step-box {
+  background: url(/images/step-box-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 4vw 3vw;
+}
+.road-box {
+  background: url(/images/road-box-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 23%;
+  padding: 6vw 4vw;
+}
+.core-team {
+  background: url(/images/core-team-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.core {
+  background: url(/images/core-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom center;
+}
+.step-box {
+  background: url(/images/core-box-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding-top: 10vw;
+  margin-top: -8vw;
+}
+@media screen and (max-width:768px) {
+  .hero{
+    background: url(/images/hero-bg-mobile.png) no-repeat;
+    height: 170vh;
+    background-size: 100% 100%;
+    background-position: 0% 50%;
+  }
+  .cta-bg {
+  background: url(/images/cta-bg-mobile.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+  .core-team {
+  background: url(/images/core-team-bg-mobile.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding-bottom: 20vw !important;
+}
+  .step-box
+  {
+    padding: 40vw 8vw 8vw 8vw;
+    margin-top: -32vw;
+  }
+ .road-box {
+  background: url(/images/road-box-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 4vw;
+  padding: 16vw;
+}
+}
